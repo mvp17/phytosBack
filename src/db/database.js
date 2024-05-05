@@ -1,7 +1,7 @@
 import mongoose from 'mongoose';
 
 const uri = process.env.MONGODB_URI || 'mongodb://localhost/phytos';
-// uri = 'mongodb://localhost/phytos'
+// const uri = 'mongodb://localhost/phytos'
 async function run() {
     await mongoose.connect(uri)
       .then(() => console.log('Database is connected with URI: ' + `${uri}`))
